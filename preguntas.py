@@ -131,7 +131,7 @@ def pregunta_03():
 
     # Cree un pipeline que contenga un estimador OneHotEncoder y un estimador
     # LogisticRegression con una regularización Cs=10
-    pipeline = Pipeline(
+    pipeline = Pipeline (
         steps=[
             ("oneHot",OneHotEncoder()),
             ("LG", LogisticRegressionCV(Cs=10)),
